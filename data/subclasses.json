@@ -1,0 +1,1216 @@
+{
+"cats": {
+"production": {
+"name": "Artisanat et production",
+"icon": "fa-hammer",
+"color": "#ffb23d"
+},
+"role": {
+"name": "Rôle et aventure",
+"icon": "fa-masks-theater",
+"color": "#5ee0ff"
+},
+"native": {
+"name": "Réservées aux natifs",
+"icon": "fa-tree-city",
+"color": "#9be564"
+},
+"title": {
+"name": "Titres spéciaux",
+"icon": "fa-crown",
+"color": "#ff4fd8"
+}
+},
+"list": [
+{
+"id": "alchimiste",
+"cat": "production",
+"name": "Alchimiste",
+"icon": "fa-flask",
+"desc": "Fabrique potions et consommables magiques, dont les bombes incendiaires et les potions de soin de bas niveau."
+},
+{
+"id": "apothicaire",
+"cat": "production",
+"name": "Apothicaire",
+"icon": "fa-mortar-pestle",
+"desc": "Prépare des remèdes et des potions élaborées. S'obtient en suivant la voie du Médecin."
+},
+{
+"id": "armurier",
+"cat": "production",
+"name": "Armurier",
+"icon": "fa-shield-halved",
+"desc": "Forge et ajuste les armures."
+},
+{
+"id": "orfevre",
+"cat": "production",
+"name": "Orfèvre",
+"icon": "fa-gem",
+"desc": "Travaille métaux précieux et gemmes : bijoux, ornements, puis mécanismes inédits."
+},
+{
+"id": "forgeron",
+"cat": "production",
+"name": "Forgeron",
+"icon": "fa-hammer",
+"desc": "Fabrique et répare l'équipement."
+},
+{
+"id": "brasseur",
+"cat": "production",
+"name": "Brasseur",
+"icon": "fa-beer-mug-empty",
+"desc": "Brasse des boissons ; préparées à la main, elles ont un vrai goût."
+},
+{
+"id": "cuisinier",
+"cat": "production",
+"name": "Cuisinier",
+"icon": "fa-utensils",
+"desc": "Cuisine des plats. Préparés à la main, ils ont une vraie saveur (« Vraie cuisine »)."
+},
+{
+"id": "faussaire",
+"cat": "production",
+"name": "Faussaire",
+"icon": "fa-copy",
+"desc": "Copie un objet à partir d'un modèle, jusqu'à imiter ses effets ; une expertise révèle la fraude."
+},
+{
+"id": "fouleur",
+"cat": "production",
+"name": "Fouleur",
+"icon": "fa-soap",
+"desc": "Nettoie et prépare la laine et les étoffes ; ajuste les vêtements."
+},
+{
+"id": "souffleur-de-verre",
+"cat": "production",
+"name": "Souffleur de verre",
+"icon": "fa-wine-glass",
+"desc": "Crée des objets de verre ; à haut niveau, verre trempé, fibres et lames de verre."
+},
+{
+"id": "luthier",
+"cat": "production",
+"name": "Luthier",
+"icon": "fa-guitar",
+"desc": "Fabrique des instruments pour les Bardes et les métiers de la musique."
+},
+{
+"id": "remouleur",
+"cat": "production",
+"name": "Rémouleur",
+"icon": "fa-scissors",
+"desc": "Restaure la durabilité des armes et armures avec une pierre et de l'eau."
+},
+{
+"id": "tailleur-de-pierre",
+"cat": "production",
+"name": "Tailleur de pierre",
+"icon": "fa-cubes-stacked",
+"desc": "Sculpte statues et monuments ; avec un Charpentier, bâtit ponts et ouvrages."
+},
+{
+"id": "machiniste",
+"cat": "production",
+"name": "Machiniste",
+"icon": "fa-gears",
+"desc": "Étudie les technologies anciennes : machines à vapeur, montres, appareils inédits."
+},
+{
+"id": "artificier-mage",
+"cat": "production",
+"name": "Artificier mage",
+"icon": "fa-wand-magic-sparkles",
+"desc": "Imprègne armes et objets de magie (tapis volants, carrosses citrouilles…). Voie de l'Alchimiste."
+},
+{
+"id": "potier",
+"cat": "production",
+"name": "Potier",
+"icon": "fa-bowl-food",
+"desc": "Façonne la céramique : assiettes, bols, vases, très recherchés par les natifs."
+},
+{
+"id": "scribe",
+"cat": "production",
+"name": "Scribe",
+"icon": "fa-feather-pointed",
+"desc": "Rédige registres et actes officiels, fabrique ses propres encres et papiers."
+},
+{
+"id": "forgeur-de-lames",
+"cat": "production",
+"name": "Forgeur de lames",
+"icon": "fa-khanda",
+"desc": "Ne forge que des épées, mais d'une qualité rarissime."
+},
+{
+"id": "couturier",
+"cat": "production",
+"name": "Couturier",
+"icon": "fa-shirt",
+"desc": "Coud vêtements et armures de tissu ou de cuir à la main."
+},
+{
+"id": "maitre-d-armes",
+"cat": "production",
+"name": "Maître d'armes",
+"icon": "fa-hammer-war",
+"desc": "Forge des armes de qualité supérieure à celles du Forgeron. Voie du Forgeron."
+},
+{
+"id": "ebeniste",
+"cat": "production",
+"name": "Ébéniste",
+"icon": "fa-tree",
+"desc": "Travaille le bois : objets, bijoux et instruments en bois."
+},
+{
+"id": "joaillier",
+"cat": "production",
+"name": "Joaillier",
+"icon": "fa-ring",
+"desc": "Taille et sertit les pierres précieuses."
+},
+{
+"id": "maroquinier",
+"cat": "production",
+"name": "Maroquinier",
+"icon": "fa-scroll",
+"desc": "Travaille le cuir : sacs, harnais, armures légères."
+},
+{
+"id": "joaillier-d-orbes",
+"cat": "production",
+"name": "Joaillier d'orbes",
+"icon": "fa-circle-dot",
+"desc": "Façonne les orbes et gemmes d'enchantement."
+},
+{
+"id": "flechier",
+"cat": "production",
+"name": "Fléchier",
+"icon": "fa-bullseye",
+"desc": "Fabrique toutes les flèches, y compris magiques, et en tire des techniques de combat."
+},
+{
+"id": "mineur",
+"cat": "production",
+"name": "Mineur",
+"icon": "fa-person-digging",
+"desc": "Extrait minerais et gemmes des gisements."
+},
+{
+"id": "prospecteur",
+"cat": "production",
+"name": "Prospecteur",
+"icon": "fa-magnifying-glass-location",
+"desc": "Repère les filons et les ressources rares."
+},
+{
+"id": "charpentier",
+"cat": "production",
+"name": "Charpentier",
+"icon": "fa-house-chimney",
+"desc": "Construit bâtiments et meubles."
+},
+{
+"id": "fermier",
+"cat": "production",
+"name": "Fermier",
+"icon": "fa-wheat-awn",
+"desc": "Cultive la terre et élève les bêtes."
+},
+{
+"id": "fleuriste",
+"cat": "production",
+"name": "Fleuriste",
+"icon": "fa-seedling",
+"desc": "Cultive et vend des fleurs, surtout les plus rares et délicates."
+},
+{
+"id": "herboriste",
+"cat": "production",
+"name": "Herboriste",
+"icon": "fa-leaf",
+"desc": "Connaît et prépare les plantes médicinales."
+},
+{
+"id": "sculpteur",
+"cat": "production",
+"name": "Sculpteur",
+"icon": "fa-chess-knight",
+"desc": "Taille et modèle des œuvres d'art."
+},
+{
+"id": "peintre",
+"cat": "production",
+"name": "Peintre",
+"icon": "fa-palette",
+"desc": "Réalise des œuvres picturales."
+},
+{
+"id": "comptable",
+"cat": "role",
+"name": "Comptable",
+"icon": "fa-calculator",
+"desc": "Bonus aux affaires et négociations ; s'obtient en réussissant un examen (boulier compris)."
+},
+{
+"id": "acrobate",
+"cat": "role",
+"name": "Acrobate",
+"icon": "fa-person-falling",
+"desc": "Chutes amorties, à l'aise en terrain accidenté, tours d'adresse."
+},
+{
+"id": "apprenti",
+"cat": "role",
+"name": "Apprenti",
+"icon": "fa-graduation-cap",
+"desc": "Copie les techniques de base de son maître ; progresse vite, plafonné au niveau 50."
+},
+{
+"id": "arcaniste",
+"cat": "role",
+"name": "Arcaniste",
+"icon": "fa-book-open",
+"desc": "Érudit de la magie : crée des parchemins et consommables magiques."
+},
+{
+"id": "architecte",
+"cat": "role",
+"name": "Architecte",
+"icon": "fa-compass-drafting",
+"desc": "Urbaniste : plans de villes et d'ouvrages."
+},
+{
+"id": "astrologue",
+"cat": "role",
+"name": "Astrologue",
+"icon": "fa-star",
+"desc": "Lit les étoiles ; meilleure détection. Voie de la Diseuse ou de l'Érudit."
+},
+{
+"id": "vengeur",
+"cat": "role",
+"name": "Vengeur",
+"icon": "fa-hand-fist",
+"desc": "Désigne un allié ; quiconque le blesse subit sa vengeance."
+},
+{
+"id": "estheticien",
+"cat": "role",
+"name": "Esthéticien",
+"icon": "fa-spray-can-sparkles",
+"desc": "Soins de beauté et apparence."
+},
+{
+"id": "croyant",
+"cat": "role",
+"name": "Croyant",
+"icon": "fa-hands-praying",
+"desc": "Touche-à-tout : quelques sorts de soin et techniques variées, de faible puissance."
+},
+{
+"id": "berserker",
+"cat": "role",
+"name": "Berserker",
+"icon": "fa-fire",
+"desc": "Résistance accrue, attaques qui volent des PV, défense renforcée près de la mort."
+},
+{
+"id": "bombardier",
+"cat": "role",
+"name": "Bombardier",
+"icon": "fa-bomb",
+"desc": "Manie les armes à longue portée (niveau 50 requis)."
+},
+{
+"id": "garde-frontiere",
+"cat": "role",
+"name": "Garde-frontière",
+"icon": "fa-shield",
+"desc": "Tient la position : forte défense, récolte accrue sur les monstres vaincus."
+},
+{
+"id": "majordome",
+"cat": "role",
+"name": "Majordome",
+"icon": "fa-bell-concierge",
+"desc": "Sert un maître en toute chose, d'une loyauté absolue."
+},
+{
+"id": "cartographe",
+"cat": "role",
+"name": "Cartographe",
+"icon": "fa-map",
+"desc": "Dessine des cartes et déchiffre les cartes au trésor."
+},
+{
+"id": "saltimbanque",
+"cat": "role",
+"name": "Saltimbanque",
+"icon": "fa-drum",
+"desc": "Fait du bruit, bat le tambour, porte des costumes voyants."
+},
+{
+"id": "clown",
+"cat": "role",
+"name": "Clown",
+"icon": "fa-face-grin-tears",
+"desc": "Amuseur et artiste de rue."
+},
+{
+"id": "cocher",
+"cat": "role",
+"name": "Cocher",
+"icon": "fa-horse",
+"desc": "Conduit attelages et voitures."
+},
+{
+"id": "collectionneur",
+"cat": "role",
+"name": "Collectionneur",
+"icon": "fa-box-archive",
+"desc": "Collectionne par passion ; augmente un peu les chances de butin."
+},
+{
+"id": "commandant",
+"cat": "role",
+"name": "Commandant",
+"icon": "fa-flag",
+"desc": "Mène les troupes en première ligne et renforce les alliés en grande bataille. Voie du Chevalier."
+},
+{
+"id": "courtisane",
+"cat": "role",
+"name": "Courtisane",
+"icon": "fa-masks-theater",
+"desc": "Artiste de cour au sens classique : rumeurs, intrigues et négociations au palais."
+},
+{
+"id": "croupier",
+"cat": "role",
+"name": "Croupier",
+"icon": "fa-dice",
+"desc": "Gère les jeux et déjoue les tricheurs ; annule les effets de chance."
+},
+{
+"id": "coursier",
+"cat": "role",
+"name": "Coursier",
+"icon": "fa-truck-fast",
+"desc": "Bonus aux livraisons, montures spéciales, charge transportable accrue."
+},
+{
+"id": "demolisseur",
+"cat": "role",
+"name": "Démolisseur",
+"icon": "fa-hammer",
+"desc": "Dégâts et destruction accrus à la hache ; démolition et défrichage."
+},
+{
+"id": "lame-maudite",
+"cat": "role",
+"name": "Lame maudite",
+"icon": "fa-skull",
+"desc": "Utilise les objets maudits avec moins d'effets néfastes."
+},
+{
+"id": "dentiste",
+"cat": "role",
+"name": "Dentiste",
+"icon": "fa-tooth",
+"desc": "Extraction forcée… même au combat."
+},
+{
+"id": "diva",
+"cat": "role",
+"name": "Diva",
+"icon": "fa-microphone",
+"desc": "Chante ; apprend des chants de Barde en échange de techniques d'arme."
+},
+{
+"id": "medecin",
+"cat": "role",
+"name": "Médecin",
+"icon": "fa-user-doctor",
+"desc": "Soigne avec des remèdes ; porte d'entrée vers l'Apothicaire."
+},
+{
+"id": "dresseur-de-dragons",
+"cat": "role",
+"name": "Dresseur de dragons",
+"icon": "fa-dragon",
+"desc": "Possède un dragon familier sans être Invocateur. Très difficile à obtenir."
+},
+{
+"id": "guerrier-dragon",
+"cat": "role",
+"name": "Guerrier-dragon",
+"icon": "fa-dragon",
+"desc": "Aura de dragon et une part de sa puissance… et de ses faiblesses."
+},
+{
+"id": "duelliste",
+"cat": "role",
+"name": "Duelliste",
+"icon": "fa-hand-back-fist",
+"desc": "Bonus en duel d'honneur ; poisons et coups bas interdits."
+},
+{
+"id": "ingenieur",
+"cat": "role",
+"name": "Ingénieur",
+"icon": "fa-screwdriver-wrench",
+"desc": "Conçoit mécanismes et ouvrages."
+},
+{
+"id": "bourreau",
+"cat": "role",
+"name": "Bourreau",
+"icon": "fa-gavel",
+"desc": "Exécute les sentences."
+},
+{
+"id": "exorciste",
+"cat": "role",
+"name": "Exorciste",
+"icon": "fa-cross",
+"desc": "Chasse les morts-vivants et les démons."
+},
+{
+"id": "explorateur",
+"cat": "role",
+"name": "Explorateur",
+"icon": "fa-compass",
+"desc": "Ouvre la voie en terre inconnue."
+},
+{
+"id": "seigneur",
+"cat": "role",
+"name": "Seigneur",
+"icon": "fa-chess-rook",
+"desc": "Possède un domaine et ses habitants ; progresse en le gérant."
+},
+{
+"id": "pecheur",
+"cat": "role",
+"name": "Pêcheur",
+"icon": "fa-fish",
+"desc": "À l'aise sous l'eau ; bonus contre les monstres aquatiques."
+},
+{
+"id": "disciple-du-soleil",
+"cat": "role",
+"name": "Disciple du soleil",
+"icon": "fa-sun",
+"desc": "Attaques de lumière, efficace contre les morts-vivants, moins discret."
+},
+{
+"id": "glouton",
+"cat": "role",
+"name": "Glouton",
+"icon": "fa-drumstick-bite",
+"desc": "Mange de tout, plusieurs plats à la fois, résiste au poison."
+},
+{
+"id": "cueilleur",
+"cat": "role",
+"name": "Cueilleur",
+"icon": "fa-basket-shopping",
+"desc": "Récolte plantes et matériaux."
+},
+{
+"id": "diseuse-de-bonne-aventure",
+"cat": "role",
+"name": "Diseuse de bonne aventure",
+"icon": "fa-crystal-ball",
+"desc": "Lit l'avenir et les présages."
+},
+{
+"id": "ami-de-la-mer",
+"cat": "role",
+"name": "Ami de la mer",
+"icon": "fa-water",
+"desc": "Communique avec les créatures marines."
+},
+{
+"id": "fugitif",
+"cat": "role",
+"name": "Fugitif",
+"icon": "fa-person-running",
+"desc": "Se cache et s'échappe ; fait pour le jeu en solitaire."
+},
+{
+"id": "joueur",
+"cat": "role",
+"name": "Joueur",
+"icon": "fa-dice-five",
+"desc": "Bonus liés à la chance : jackpot, assurance, dés du destin."
+},
+{
+"id": "jardinier",
+"cat": "role",
+"name": "Jardinier",
+"icon": "fa-spa",
+"desc": "Aménage et cultive les jardins."
+},
+{
+"id": "gladiateur",
+"cat": "role",
+"name": "Gladiateur",
+"icon": "fa-shield-heart",
+"desc": "Bonus en combat contre d'autres aventuriers, fait pour impressionner le public."
+},
+{
+"id": "pilleur-de-tombes",
+"cat": "role",
+"name": "Pilleur de tombes",
+"icon": "fa-skull-crossbones",
+"desc": "Désamorce les pièges, fouille ruines et sépultures."
+},
+{
+"id": "guide",
+"cat": "role",
+"name": "Guide",
+"icon": "fa-signs-post",
+"desc": "Conduit voyageurs et expéditions."
+},
+{
+"id": "brave",
+"cat": "role",
+"name": "Brave",
+"icon": "fa-star-of-life",
+"desc": "Remonte le moral, attire l'attention des ennemis, résiste aux effets mentaux."
+},
+{
+"id": "paladin",
+"cat": "role",
+"name": "Paladin",
+"icon": "fa-shield-halved",
+"desc": "Échange des techniques de guerrier contre des soins."
+},
+{
+"id": "intendant",
+"cat": "role",
+"name": "Intendant",
+"icon": "fa-broom",
+"desc": "Entretient les lieux, range, gère les réserves."
+},
+{
+"id": "homme-ou-femme-au-foyer",
+"cat": "role",
+"name": "Homme ou femme au foyer",
+"icon": "fa-house",
+"desc": "Techniques de base de nombreux métiers (cuisine, couture, ferme…)."
+},
+{
+"id": "chasseur",
+"cat": "role",
+"name": "Chasseur",
+"icon": "fa-crosshairs",
+"desc": "Précision et butin accrus ; récupère parfois ses flèches."
+},
+{
+"id": "idole",
+"cat": "role",
+"name": "Idole",
+"icon": "fa-star",
+"desc": "Charisme, voix portée, danse ; galvanise ses alliés."
+},
+{
+"id": "plante-carnivore",
+"cat": "role",
+"name": "Plante carnivore",
+"icon": "fa-plant-wilt",
+"desc": "Peau d'écorce, se régénère au soleil, attire les bêtes avec son nectar."
+},
+{
+"id": "kabuki",
+"cat": "role",
+"name": "Kabuki",
+"icon": "fa-masks-theater",
+"desc": "Attire l'attention par des tenues et des gestes flamboyants."
+},
+{
+"id": "doublure",
+"cat": "role",
+"name": "Doublure",
+"icon": "fa-user-secret",
+"desc": "Sert de sosie à un dignitaire pour déjouer les assassinats."
+},
+{
+"id": "chevalier",
+"cat": "role",
+"name": "Chevalier",
+"icon": "fa-chess-knight",
+"desc": "Très populaire ; voie vers Commandant et Chevalier runique."
+},
+{
+"id": "proprietaire",
+"cat": "role",
+"name": "Propriétaire",
+"icon": "fa-key",
+"desc": "Loue et gère des logements."
+},
+{
+"id": "paysagiste",
+"cat": "role",
+"name": "Paysagiste",
+"icon": "fa-tree",
+"desc": "Aménage les paysages."
+},
+{
+"id": "geometre",
+"cat": "role",
+"name": "Géomètre",
+"icon": "fa-ruler-combined",
+"desc": "Mesure et cartographie les terrains."
+},
+{
+"id": "avocat",
+"cat": "role",
+"name": "Avocat",
+"icon": "fa-scale-balanced",
+"desc": "Défend ses clients… et frappe avec justice."
+},
+{
+"id": "bibliothecaire",
+"cat": "role",
+"name": "Bibliothécaire",
+"icon": "fa-book",
+"desc": "Collectionne et classe le savoir."
+},
+{
+"id": "enfant",
+"cat": "role",
+"name": "Enfant",
+"icon": "fa-child",
+"desc": "Pour les plus jeunes aventuriers."
+},
+{
+"id": "cornac",
+"cat": "role",
+"name": "Cornac",
+"icon": "fa-paw",
+"desc": "Dresse et monte les éléphants."
+},
+{
+"id": "domestique",
+"cat": "role",
+"name": "Domestique",
+"icon": "fa-mug-hot",
+"desc": "Sert la maison avec élégance."
+},
+{
+"id": "tueur-d-hommes",
+"cat": "role",
+"name": "Tueur d'hommes",
+"icon": "fa-user-ninja",
+"desc": "Annule résistances et protections de l'adversaire ; intimide en négociation."
+},
+{
+"id": "seigneur-demon",
+"cat": "role",
+"name": "Seigneur démon",
+"icon": "fa-crown",
+"desc": "Purement esthétique : costumes et lettres de « Papa Seigneur démon »."
+},
+{
+"id": "mercenaire",
+"cat": "role",
+"name": "Mercenaire",
+"icon": "fa-coins",
+"desc": "Combat contre rémunération."
+},
+{
+"id": "marchand",
+"cat": "role",
+"name": "Marchand",
+"icon": "fa-scale-unbalanced",
+"desc": "Commerce et échanges à grande échelle."
+},
+{
+"id": "musicien",
+"cat": "role",
+"name": "Musicien",
+"icon": "fa-music",
+"desc": "Joue et compose sa propre musique."
+},
+{
+"id": "voleur-mystique",
+"cat": "role",
+"name": "Voleur mystique",
+"icon": "fa-mask",
+"desc": "Obtient des sorts en échange de techniques d'arme."
+},
+{
+"id": "necromancien",
+"cat": "role",
+"name": "Nécromancien",
+"icon": "fa-skull",
+"desc": "Pouvoirs des morts, qui varient selon la classe."
+},
+{
+"id": "desuvre",
+"cat": "role",
+"name": "Désœuvré",
+"icon": "fa-couch",
+"desc": "Ne fait rien… et l'assume."
+},
+{
+"id": "negociateur",
+"cat": "role",
+"name": "Négociateur",
+"icon": "fa-handshake",
+"desc": "Rédige des contrats magiquement contraignants."
+},
+{
+"id": "noble",
+"cat": "role",
+"name": "Noble",
+"icon": "fa-chess-queen",
+"desc": "Titre qui monte avec le niveau : Sire, Baronnet, Baron, Vicomte, Comte, Marquis."
+},
+{
+"id": "nomade",
+"cat": "role",
+"name": "Nomade",
+"icon": "fa-campground",
+"desc": "Tire laine et lait des bêtes, fabrique tentes et ponchos ; montures plus endurantes."
+},
+{
+"id": "romancier",
+"cat": "role",
+"name": "Romancier",
+"icon": "fa-pen-nib",
+"desc": "Écrit des récits."
+},
+{
+"id": "naturiste",
+"cat": "role",
+"name": "Naturiste",
+"icon": "fa-person",
+"desc": "Plus fort sans armure… au grand malaise de tous."
+},
+{
+"id": "hors-la-loi",
+"cat": "role",
+"name": "Hors-la-loi",
+"icon": "fa-user-slash",
+"desc": "Vit en marge des lois."
+},
+{
+"id": "pelerin",
+"cat": "role",
+"name": "Pèlerin",
+"icon": "fa-person-hiking",
+"desc": "Voyage de sanctuaire en sanctuaire."
+},
+{
+"id": "pirate",
+"cat": "role",
+"name": "Pirate",
+"icon": "fa-skull-crossbones",
+"desc": "Écume les mers."
+},
+{
+"id": "empoisonneur",
+"cat": "role",
+"name": "Empoisonneur",
+"icon": "fa-flask-vial",
+"desc": "Fabrique et maîtrise les poisons, enduit ses armes."
+},
+{
+"id": "orant",
+"cat": "role",
+"name": "Orant",
+"icon": "fa-hands-praying",
+"desc": "Prie pour ses alliés."
+},
+{
+"id": "reparateur",
+"cat": "role",
+"name": "Réparateur",
+"icon": "fa-screwdriver",
+"desc": "Répare objets et mécanismes."
+},
+{
+"id": "voleur",
+"cat": "role",
+"name": "Voleur",
+"icon": "fa-user-ninja",
+"desc": "Vole les monstres, pose des pièges, crochète et espionne."
+},
+{
+"id": "ronin",
+"cat": "role",
+"name": "Rōnin",
+"icon": "fa-person-walking",
+"desc": "Samouraï sans maître."
+},
+{
+"id": "chevalier-runique",
+"cat": "role",
+"name": "Chevalier runique",
+"icon": "fa-shield-virus",
+"desc": "Invoque des runes au combat. Voie du Chevalier."
+},
+{
+"id": "maitre-des-runes",
+"cat": "role",
+"name": "Maître des runes",
+"icon": "fa-scroll",
+"desc": "Grave des runes à usage unique sur les objets."
+},
+{
+"id": "marin",
+"cat": "role",
+"name": "Marin",
+"icon": "fa-anchor",
+"desc": "Métier des navires ; peut revenir à la vie sur la terre ferme."
+},
+{
+"id": "erudit",
+"cat": "role",
+"name": "Érudit",
+"icon": "fa-book-bookmark",
+"desc": "Savant et chercheur."
+},
+{
+"id": "eclaireur",
+"cat": "role",
+"name": "Éclaireur",
+"icon": "fa-binoculars",
+"desc": "Reconnaît le terrain en avant."
+},
+{
+"id": "secretaire",
+"cat": "role",
+"name": "Secrétaire",
+"icon": "fa-clipboard",
+"desc": "Assiste et organise. Voie de l'Apprenti."
+},
+{
+"id": "sherif",
+"cat": "role",
+"name": "Shérif",
+"icon": "fa-star",
+"desc": "Fait régner l'ordre."
+},
+{
+"id": "graveur-de-sceaux",
+"cat": "role",
+"name": "Graveur de sceaux",
+"icon": "fa-stamp",
+"desc": "Grave des sceaux magiques sur les objets. Voie de l'Alchimiste."
+},
+{
+"id": "espion",
+"cat": "role",
+"name": "Espion",
+"icon": "fa-eye",
+"desc": "Renseignement et infiltration."
+},
+{
+"id": "conteur",
+"cat": "role",
+"name": "Conteur",
+"icon": "fa-book-open-reader",
+"desc": "Raconte légendes et histoires."
+},
+{
+"id": "maitre-de-the",
+"cat": "role",
+"name": "Maître de thé",
+"icon": "fa-mug-saucer",
+"desc": "Art du thé et de l'hospitalité."
+},
+{
+"id": "survivant",
+"cat": "role",
+"name": "Survivant",
+"icon": "fa-heart-pulse",
+"desc": "Se renforce dans les situations désespérées."
+},
+{
+"id": "escroc",
+"cat": "role",
+"name": "Escroc",
+"icon": "fa-face-smile-wink",
+"desc": "Trompe et manipule."
+},
+{
+"id": "fabricant-de-sabres",
+"cat": "role",
+"name": "Fabricant de sabres",
+"icon": "fa-khanda",
+"desc": "Rôle d'artisan des lames, sans en forger."
+},
+{
+"id": "stratege",
+"cat": "role",
+"name": "Stratège",
+"icon": "fa-chess",
+"desc": "Soutient ses alliés et lit le champ de bataille."
+},
+{
+"id": "talismancier",
+"cat": "role",
+"name": "Talismancier",
+"icon": "fa-paper-plane",
+"desc": "Talismans de protection et de riposte."
+},
+{
+"id": "dresseur",
+"cat": "role",
+"name": "Dresseur",
+"icon": "fa-paw",
+"desc": "Capture et élève des monstres comme compagnons."
+},
+{
+"id": "tortionnaire",
+"cat": "role",
+"name": "Tortionnaire",
+"icon": "fa-link",
+"desc": "Maître de la douleur."
+},
+{
+"id": "pisteur",
+"cat": "role",
+"name": "Pisteur",
+"icon": "fa-shoe-prints",
+"desc": "Suit sans être vu, se cache, se déplace dans l'ombre."
+},
+{
+"id": "trappeur",
+"cat": "role",
+"name": "Trappeur",
+"icon": "fa-dungeon",
+"desc": "Pose et désamorce les pièges."
+},
+{
+"id": "voyageur-des-sept-terres",
+"cat": "role",
+"name": "Voyageur des sept terres",
+"icon": "fa-earth-europe",
+"desc": "A parcouru le monde entier."
+},
+{
+"id": "chasseur-de-morts-vivants",
+"cat": "role",
+"name": "Chasseur de morts-vivants",
+"icon": "fa-ghost",
+"desc": "Spécialiste des morts-vivants."
+},
+{
+"id": "vampanella",
+"cat": "role",
+"name": "Vampanella",
+"icon": "fa-moon",
+"desc": "Puissant la nuit, se nourrit de sang, se change en chauve-souris ; craint le soleil."
+},
+{
+"id": "vendeur",
+"cat": "role",
+"name": "Vendeur",
+"icon": "fa-store",
+"desc": "Tient boutique."
+},
+{
+"id": "viking",
+"cat": "role",
+"name": "Viking",
+"icon": "fa-ship",
+"desc": "Guerrier des mers du nord."
+},
+{
+"id": "vagabond",
+"cat": "role",
+"name": "Vagabond",
+"icon": "fa-wind",
+"desc": "Très fort en solitaire, affaibli en groupe."
+},
+{
+"id": "combattant-a-baguette",
+"cat": "role",
+"name": "Combattant à baguette",
+"icon": "fa-wand-sparkles",
+"desc": "Combat au corps à corps avec une baguette."
+},
+{
+"id": "maitre-des-baguettes",
+"cat": "role",
+"name": "Maître des baguettes",
+"icon": "fa-wand-magic",
+"desc": "Crée des baguettes qui lancent des sorts sans PM."
+},
+{
+"id": "moine-soldat",
+"cat": "role",
+"name": "Moine-soldat",
+"icon": "fa-hand-fist",
+"desc": "Échange des soins contre des techniques de guerrier."
+},
+{
+"id": "wuxia",
+"cat": "role",
+"name": "Wuxia",
+"icon": "fa-yin-yang",
+"desc": "Arts martiaux chevaleresques ; peut résister à un coup fatal."
+},
+{
+"id": "ancien",
+"cat": "native",
+"name": "Ancien",
+"icon": "fa-tree-city",
+"desc": "Gardien immémorial de ces terres."
+},
+{
+"id": "grande-servante",
+"cat": "native",
+"name": "Grande servante",
+"icon": "fa-bell-concierge",
+"desc": "Servante d'élite des grandes maisons."
+},
+{
+"id": "princesse-du-jardin-de-roses",
+"cat": "native",
+"name": "Princesse du jardin de roses",
+"icon": "fa-crown",
+"desc": "Princesse de haute lignée."
+},
+{
+"id": "amiral",
+"cat": "title",
+"name": "Amiral",
+"icon": "fa-anchor",
+"desc": "Commande les grandes batailles navales."
+},
+{
+"id": "sang-bleu",
+"cat": "title",
+"name": "Sang bleu",
+"icon": "fa-droplet",
+"desc": "Porte le sang d'une famille royale, d'un dragon ou d'un dieu."
+},
+{
+"id": "erreur-de-categorie",
+"cat": "title",
+"name": "Erreur de catégorie",
+"icon": "fa-shuffle",
+"desc": "Prétend briser les classes… touche à tout, ne maîtrise rien."
+},
+{
+"id": "champion",
+"cat": "title",
+"name": "Champion",
+"icon": "fa-trophy",
+"desc": "Victoires répétées en tournoi ; bonus en tournoi."
+},
+{
+"id": "tueur-de-dragons",
+"cat": "title",
+"name": "Tueur de dragons",
+"icon": "fa-dragon",
+"desc": "Vainqueur de dragons de raid ; techniques de défense et d'esquive."
+},
+{
+"id": "general",
+"cat": "title",
+"name": "Général",
+"icon": "fa-flag-checkered",
+"desc": "Commandement renforcé ; supérieur au Commandant."
+},
+{
+"id": "tueur-de-geants",
+"cat": "title",
+"name": "Tueur de géants",
+"icon": "fa-mountain",
+"desc": "Vainqueur de géants de raid ; portée et défense accrues."
+},
+{
+"id": "heros",
+"cat": "title",
+"name": "Héros",
+"icon": "fa-medal",
+"desc": "Vétéran des raids ; PV et PM un peu plus hauts dans les grands combats."
+},
+{
+"id": "tueur-de-cent-hommes",
+"cat": "title",
+"name": "Tueur de cent hommes",
+"icon": "fa-skull",
+"desc": "A vaincu plus de cent aventuriers."
+},
+{
+"id": "magical-girl",
+"cat": "title",
+"name": "Magical girl",
+"icon": "fa-wand-magic-sparkles",
+"desc": "Transformation magique et mascotte."
+},
+{
+"id": "ninja",
+"cat": "title",
+"name": "Ninja",
+"icon": "fa-user-ninja",
+"desc": "Techniques « ninja » surhumaines, quête très difficile."
+},
+{
+"id": "voleur-fantome",
+"cat": "title",
+"name": "Voleur fantôme",
+"icon": "fa-mask",
+"desc": "Gentleman cambrioleur."
+},
+{
+"id": "prince-electeur",
+"cat": "title",
+"name": "Prince-électeur",
+"icon": "fa-chess-king",
+"desc": "Élit le souverain et gouverne une région."
+},
+{
+"id": "rock-star",
+"cat": "title",
+"name": "Rock star",
+"icon": "fa-guitar",
+"desc": "Instruments comme armes, concerts endiablés."
+},
+{
+"id": "sage",
+"cat": "title",
+"name": "Sage",
+"icon": "fa-hat-wizard",
+"desc": "Pouvoirs des trois classes de soin et des trois classes de mage."
+},
+{
+"id": "lame-d-ame",
+"cat": "title",
+"name": "Lame d'âme",
+"icon": "fa-khanda",
+"desc": "Lie son âme à son arme, qui grandit avec lui."
+},
+{
+"id": "saint-du-sabre",
+"cat": "title",
+"name": "Saint du sabre",
+"icon": "fa-khanda",
+"desc": "Maître absolu de l'épée."
+},
+{
+"id": "chasseur-de-vampires",
+"cat": "title",
+"name": "Chasseur de vampires",
+"icon": "fa-cross",
+"desc": "Spécialiste des vampires."
+}
+]
+}

@@ -1,0 +1,100 @@
+/* ══════════ Manhwa Sheet 1.29 — plein écran (Appel des Étoiles, Boutique stellaire, Catalogue) ══════════ */
+.application.ms-fs {
+  --ms-fs-l: 0px; --ms-fs-r: 118px; --ms-neon: #38e0ff;
+  position: fixed !important; inset: 0 !important; left: 0 !important; top: 0 !important; width: 100vw !important; height: 100vh !important; height: 100dvh !important;
+  max-width: none !important; max-height: none !important; min-width: 0 !important; min-height: 0 !important; margin: 0 !important;
+  border: none !important; border-radius: 0 !important; transform: none !important; box-shadow: none !important;
+}
+.application.ms-fs.has-back { --ms-fs-l: 116px; }
+.application.ms-fs > .window-header, .application.ms-fs > .window-resize-handle, .application.ms-fs > .window-resizable-handle { display: none !important; }
+.application.ms-fs > .window-content { flex: 1; height: 100%; max-height: none; }
+
+/* commandes flottantes */
+.ms-fs-ctl { position: absolute; inset: 0 0 auto 0; height: 0; z-index: 60; pointer-events: none; }
+.ms-fs-ctl button { all: unset; box-sizing: border-box; cursor: pointer; pointer-events: auto; }
+.ms-fs-ctl .ms-fs-back { position: absolute; left: 24px; top: 8px; display: none; align-items: center; gap: 2px; height: 58px; }
+.application.ms-fs.has-back .ms-fs-back { display: inline-flex; }
+.ms-fs-back svg { width: 84px; height: 56px; overflow: visible; filter: drop-shadow(0 0 4px var(--ms-neon)) drop-shadow(0 0 12px #1a9dff) drop-shadow(0 0 26px #1a7dffaa); animation: msFsNudge 1.6s ease-in-out infinite; }
+.ms-fs-back svg .ar { stroke: #dffbff; stroke-width: 2; stroke-linejoin: round; }
+.ms-fs-back svg .tr { fill: none; stroke: var(--ms-neon); stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; opacity: 0; animation: msFsTrail 1.6s ease-out infinite; }
+.ms-fs-back svg .t2 { animation-delay: .18s; }
+.ms-fs-back .lb { font: 800 12px/1 var(--ms-font-title, "Signika", sans-serif); letter-spacing: .16em; text-transform: uppercase; color: #bff6ff; text-shadow: 0 0 8px var(--ms-neon), 0 0 18px #1a7dff; max-width: 0; overflow: hidden; white-space: nowrap; opacity: 0; transition: max-width .3s, opacity .3s, margin .3s; }
+.ms-fs-back:hover .lb, .ms-fs-back:focus-visible .lb { max-width: 220px; opacity: 1; margin-left: 4px; }
+.ms-fs-back:hover svg { animation-duration: .8s; filter: drop-shadow(0 0 6px #fff) drop-shadow(0 0 16px var(--ms-neon)) drop-shadow(0 0 34px #1a7dff); }
+.ms-fs-back:active svg { transform: translateX(-6px) scale(.94); }
+@keyframes msFsNudge { 0%, 100% { transform: translateX(0); } 45% { transform: translateX(-7px); } 60% { transform: translateX(-5px); } }
+@keyframes msFsTrail { 0% { opacity: 0; transform: translateX(0); } 25% { opacity: .9; } 100% { opacity: 0; transform: translateX(18px); } }
+
+.ms-fs-r { position: absolute; right: 14px; top: 12px; display: flex; gap: 10px; pointer-events: auto; }
+/* boutons 3D iso (réduire, quitter) */
+.ms-fs-ctl .ms-fs-btn { position: relative; width: 44px; height: 44px; display: grid !important; place-items: center; border-radius: 12px; color: #e8f4ff; font-size: 17px;
+  background: linear-gradient(155deg, #3a4a78 0%, #1b2547 55%, #10172e 100%);
+  box-shadow: inset 0 1px 0 #ffffff55, inset 0 -2px 0 #0006, 1px 1px 0 #0c1226, 2px 2px 0 #0b1023, 3px 3px 0 #0a0e20, 4px 4px 0 #080b1a, 5px 5px 0 #070915, 8px 10px 18px #000b;
+  transition: transform .12s, box-shadow .12s, filter .15s; overflow: hidden; }
+.ms-fs-ctl .ms-fs-btn::after { content: ""; position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(115deg, transparent 35%, #ffffff55 50%, transparent 65%) -150% 0 / 250% 100% no-repeat; animation: msFsSheen 4.5s ease-in-out infinite; pointer-events: none; }
+.ms-fs-ctl .ms-fs-btn:hover { transform: translate(-1px, -1px); filter: brightness(1.2); }
+.ms-fs-ctl .ms-fs-btn:active { transform: translate(4px, 4px); box-shadow: inset 0 1px 0 #ffffff33, inset 0 2px 6px #0008, 1px 1px 0 #0a0e20, 3px 4px 8px #000a; }
+.ms-fs-ctl .ms-fs-btn.x { color: #fff; background: linear-gradient(155deg, #ff7a8a 0%, #d6304a 55%, #8e1530 100%); box-shadow: inset 0 1px 0 #ffffff77, inset 0 -2px 0 #0005, 1px 1px 0 #7a1028, 2px 2px 0 #6a0d22, 3px 3px 0 #5a0b1d, 4px 4px 0 #4a0918, 5px 5px 0 #3a0712, 8px 10px 18px #000b; }
+.ms-fs-ctl .ms-fs-btn.x:active { box-shadow: inset 0 1px 0 #ffffff44, inset 0 2px 6px #0008, 1px 1px 0 #5a0b1d, 3px 4px 8px #000a; }
+@keyframes msFsSheen { 0%, 62% { background-position: -150% 0; } 100% { background-position: 150% 0; } }
+
+/* réduite : une barre en bas de l'écran */
+.ms-fs-bar { display: none; }
+.application.ms-fs.ms-fs-min { inset: auto !important; left: 50% !important; top: auto !important; bottom: 84px !important; right: auto !important; translate: -50% 0;
+  width: min(560px, 92vw) !important; height: 60px !important; border-radius: 30px !important; overflow: hidden !important; background: none !important;
+  box-shadow: 0 0 0 1px #38e0ff66, 0 0 22px #1a7dff66, 0 12px 30px #000c !important; animation: msFsBarIn .28s cubic-bezier(.2, .9, .3, 1.2); }
+.application.ms-fs.ms-fs-min > .window-content, .application.ms-fs.ms-fs-min > .ms-fs-ctl { display: none !important; }
+.application.ms-fs.ms-fs-min > .ms-fs-bar { display: flex; align-items: center; gap: 14px; width: 100%; height: 100%; padding: 0 22px; cursor: pointer; color: #eaf6ff;
+  background: linear-gradient(90deg, #0b1430f2, #142a5af2 50%, #0b1430f2); }
+.ms-fs-bar .ic { font-size: 22px; color: #ffd76a; filter: drop-shadow(0 0 8px #ffb84a); }
+.ms-fs-bar b { flex: 1; min-width: 0; font-size: 16px; letter-spacing: .04em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ms-fs-bar .hint { font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: #9fefff; text-shadow: 0 0 8px #38e0ff; }
+.ms-fs-bar .up { color: #9fefff; animation: msFsPulse 1.6s ease-in-out infinite; }
+.ms-fs-bar:hover { filter: brightness(1.15); }
+@keyframes msFsPulse { 50% { transform: scale(1.18); text-shadow: 0 0 10px #38e0ff; } }
+@keyframes msFsBarIn { from { transform: translateY(40px) scale(.9); opacity: 0; } }
+
+/* Catalogue (iframe) : bande de commandes en haut, l'iframe dessous */
+.application.ms-fs.bq-frame > .window-content { padding-top: 68px !important; background: radial-gradient(900px 120px at 50% 0%, #10306a, #04070f 70%) !important; }
+.application.ms-fs.bq-frame > .window-content > iframe { height: 100%; }
+@media (prefers-reduced-motion: reduce) { .ms-fs-back svg, .ms-fs-back svg .tr, .ms-fs-btn::after, .ms-fs-bar .up { animation: none; } }
+
+/* 1.31 — bandeau-titre spatial pour les fenêtres sans barre propre (Domaine, Worldbook) : classe « ms-fs-band » */
+.ms-fs-ttl { display: none; }
+.application.ms-fs.ms-fs-band { --ms-fs-band: 68px; }
+.application.ms-fs.ms-fs-band::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: var(--ms-fs-band); z-index: 50; pointer-events: none;
+  background: radial-gradient(520px 130px at 12% -30%, #3f7bff55, transparent 70%), radial-gradient(460px 150px at 62% 140%, #a24cff40, transparent 70%), radial-gradient(380px 110px at 96% -20%, #23d5ff38, transparent 70%),
+    radial-gradient(1px 1px at 8% 30%, #fff, transparent 60%), radial-gradient(1px 1px at 33% 72%, #cfeaff, transparent 60%), radial-gradient(1.4px 1.4px at 51% 22%, #fff, transparent 60%), radial-gradient(1px 1px at 77% 64%, #e6d9ff, transparent 60%),
+    linear-gradient(100deg, #050b22 0%, #0b1446 34%, #170f45 66%, #071a3a 100%);
+  box-shadow: 0 1px 0 #d9f7ff55, 0 0 22px -8px #7fd8ffaa; }
+.application.ms-fs.ms-fs-band > .window-content { padding-top: var(--ms-fs-band) !important; }
+.application.ms-fs.ms-fs-band .ms-fs-ttl { position: absolute; left: 22px; top: 14px; height: 40px; display: flex; align-items: center; gap: 12px; padding: 0 18px 0 12px; border-radius: 4px; pointer-events: none;
+  background: linear-gradient(90deg, #9ff3ff17, #7f8cff12 60%, transparent); box-shadow: inset 0 0 0 1px #bfefff40, 0 0 18px -8px #9ff3ff; }
+.application.ms-fs.ms-fs-band.has-back .ms-fs-ttl { left: 132px; }
+.ms-fs-ttl .ic { font-size: 20px; color: #9ff3ff; filter: drop-shadow(0 0 6px #38e0ff); }
+.ms-fs-ttl b { font: 900 17px/1 var(--ms-font-title, "Signika", sans-serif); letter-spacing: .22em; text-transform: uppercase; color: transparent; background: linear-gradient(180deg, #fff 15%, #bff6ff 55%, #b9a6ff); -webkit-background-clip: text; background-clip: text; filter: drop-shadow(0 0 6px #7fd8ffaa); white-space: nowrap; }
+.application.ms-fs.ms-fs-band.ms-fs-min::before { display: none; }
+
+/* 1.36.2 — plusieurs barres réduites côte à côte (positions calculées par fsLayout) */
+.application.ms-fs.ms-fs-min { left: var(--ms-fs-x, 50%) !important; width: var(--ms-fs-w, min(560px, 92vw)) !important; bottom: var(--ms-fs-b, 84px) !important; }
+.application.ms-fs.ms-fs-min[style*="--ms-fs-x"] { translate: none; }
+/* 1.37 — sous-titre au centre du bandeau, en très grand (Worldbook › ATLAS DES MONDES) */
+.application.ms-fs.ms-fs-band .ms-fs-sub { position: absolute; left: 50%; top: calc(var(--ms-fs-band) / 2); transform: translate(-50%, -50%); z-index: 55; pointer-events: none; white-space: nowrap;
+  font: 900 40px/1 "Cinzel", var(--ms-font-title, "Signika"), serif; letter-spacing: .12em; text-transform: uppercase; color: transparent; background: linear-gradient(180deg, #ffffff 8%, #bff6ff 48%, #c9b4ff 92%); -webkit-background-clip: text; background-clip: text; filter: drop-shadow(0 0 12px #7fd8ffaa) drop-shadow(0 2px 2px #000a); }
+.application.ms-fs.ms-fs-band .ms-fs-sub[hidden], .application.ms-fs:not(.ms-fs-band) .ms-fs-sub { display: none; }
+@media (max-width: 1100px) { .application.ms-fs.ms-fs-band .ms-fs-sub { font-size: 28px; } }
+/* 1.37 — croix pour fermer directement une fenêtre réduite */
+.ms-fs-bar .x { all: unset; box-sizing: border-box; flex: none; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; cursor: pointer; color: #fff; font-size: 15px; margin-left: 2px;
+  background: linear-gradient(155deg, #ff7a8a, #d6304a 55%, #8e1530); box-shadow: inset 0 1px 0 #ffffff66, 0 2px 0 #5a0b1d, 0 0 10px -2px #ff4a6a; transition: transform .12s, filter .15s; }
+.ms-fs-bar .x:hover { filter: brightness(1.15); transform: scale(1.06); } .ms-fs-bar .x:active { transform: scale(.94); }
+
+/* 1.53 — fenêtres réduites (double-clic) : barre compacte rangée en bas avec les autres */
+.application.ms-win-min.minimized { position: fixed !important; inset: auto !important; left: var(--ms-fs-x, 50%) !important; bottom: var(--ms-fs-b, 84px) !important; top: auto !important; right: auto !important;
+  width: min(var(--ms-fs-w, 300px), 320px) !important; height: 46px !important; min-width: 0 !important; min-height: 0 !important; max-height: 46px !important; overflow: hidden !important; transform: none !important; translate: none !important;
+  border-radius: 14px !important; border: 1px solid color-mix(in srgb, var(--ms-acc, #38c8ff) 60%, transparent) !important; background: linear-gradient(100deg, #10173acc, #060918ee) !important; box-shadow: 0 0 16px -4px var(--ms-acc, #38c8ff), 0 10px 26px -10px #000 !important; z-index: 60 !important; }
+.application.ms-win-min.minimized > .window-content, .application.ms-win-min.minimized > .window-resize-handle, .application.ms-win-min.minimized > .ms-fs-ctl { display: none !important; }
+.application.ms-win-min.minimized > .window-header { height: 46px !important; padding: 0 12px !important; border: 0 !important; background: transparent !important; cursor: pointer; gap: 6px; }
+.application.ms-win-min.minimized > .window-header .window-title { font: 700 13px "Rajdhani", sans-serif !important; letter-spacing: .04em; color: #eaf6ff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.application.ms-win-min.minimized > .window-header .window-icon { color: var(--ms-acc, #38c8ff); }
+.application.ms-win-min.minimized > .window-header button:not([data-action="close"]):not([data-action="toggleControls"]) { display: none; }
+.application.ms-win-min.minimized:hover { box-shadow: 0 0 22px -2px var(--ms-acc, #38c8ff), 0 10px 26px -10px #000 !important; }

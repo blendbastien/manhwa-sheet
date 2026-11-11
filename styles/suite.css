@@ -1,0 +1,43 @@
+/* ═══ Manhwa Sheet — styles communs à toute la suite (la Fiche est au centre) ═══
+ * Cases à cocher : Foundry v13 dessine la case et la coche avec deux pseudo-éléments ; dès qu'un module change la taille
+ * de la case, ils se séparent (case en double, coche décalée). Ici, une case unique dessinée par nous, partout dans la suite.
+ * Couleur : variable --ck-on (définie par chaque module si besoin). */
+:is(.ms-sheet, .ms-dialog, .ms-gmhub, .ms-menu-app, .bq-app, .bq-dlg, .bq-dialog, .bq-picker, .bq-givedlg, .bq-map-form, .gm-app, .gm-dialog, .horlogia-app, .hz-dialog, .pm-manager, .pm-dialog, .sm-dialog, .sm-frame, .sm-journal, .vm-sheet, .vm-dialog, .nm-frame, .cs-app, .cs-dialog, .ms-suite)
+  input[type="checkbox"]:not(.ph-tog input):not(.ms-toggle input):not(.ms-tog input):not(.ms-gg-chip input):not(.rw-g input):not(.rw-c input):not(.bq-sw input):not(.bq-cuc input):not(.fck > input):not(.pm-sw input):not(.ms-sw2 input) {
+  appearance: none; -webkit-appearance: none; flex: none; box-sizing: border-box;
+  width: 18px !important; height: 18px !important; min-width: 18px; margin: 0; padding: 0; vertical-align: middle;
+  border-radius: 5px; border: 2px solid var(--ck-bd, #6f86c9); background: var(--ck-bg, #0b1230) center / 12px no-repeat;
+  box-shadow: inset 0 1px 2px #0009; cursor: pointer; font-size: 0; position: relative; transition: background-color .12s, border-color .12s, box-shadow .12s;
+}
+:is(.ms-sheet, .ms-dialog, .ms-gmhub, .ms-menu-app, .bq-app, .bq-dlg, .bq-dialog, .bq-picker, .bq-givedlg, .bq-map-form, .gm-app, .gm-dialog, .horlogia-app, .hz-dialog, .pm-manager, .pm-dialog, .sm-dialog, .sm-frame, .sm-journal, .vm-sheet, .vm-dialog, .nm-frame, .cs-app, .cs-dialog, .ms-suite)
+  input[type="checkbox"]:not(.ph-tog input):not(.ms-toggle input):not(.ms-tog input):not(.ms-gg-chip input):not(.rw-g input):not(.rw-c input):not(.bq-sw input):not(.bq-cuc input):not(.fck > input):not(.pm-sw input):not(.ms-sw2 input)::before,
+:is(.ms-sheet, .ms-dialog, .ms-gmhub, .ms-menu-app, .bq-app, .bq-dlg, .bq-dialog, .bq-picker, .bq-givedlg, .bq-map-form, .gm-app, .gm-dialog, .horlogia-app, .hz-dialog, .pm-manager, .pm-dialog, .sm-dialog, .sm-frame, .sm-journal, .vm-sheet, .vm-dialog, .nm-frame, .cs-app, .cs-dialog, .ms-suite)
+  input[type="checkbox"]:not(.ph-tog input):not(.ms-toggle input):not(.ms-tog input):not(.ms-gg-chip input):not(.rw-g input):not(.rw-c input):not(.bq-sw input):not(.bq-cuc input):not(.fck > input):not(.pm-sw input):not(.ms-sw2 input)::after { content: none !important; display: none !important; }
+:is(.ms-sheet, .ms-dialog, .ms-gmhub, .ms-menu-app, .bq-app, .bq-dlg, .bq-dialog, .bq-picker, .bq-givedlg, .bq-map-form, .gm-app, .gm-dialog, .horlogia-app, .hz-dialog, .pm-manager, .pm-dialog, .sm-dialog, .sm-frame, .sm-journal, .vm-sheet, .vm-dialog, .nm-frame, .cs-app, .cs-dialog, .ms-suite)
+  input[type="checkbox"]:not(.ph-tog input):not(.ms-toggle input):not(.ms-tog input):not(.ms-gg-chip input):not(.rw-g input):not(.rw-c input):not(.bq-sw input):not(.bq-cuc input):not(.fck > input):not(.pm-sw input):not(.ms-sw2 input):checked {
+  border-color: var(--ck-on, #ffc63d); background-color: var(--ck-on, #ffc63d);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><path d='M2 6.4l2.6 2.6L10 3.4' fill='none' stroke='%23140e02' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  box-shadow: 0 0 8px -2px var(--ck-on, #ffc63d);
+}
+:is(.ms-sheet, .ms-dialog, .ms-gmhub, .ms-menu-app, .bq-app, .bq-dlg, .bq-dialog, .bq-picker, .bq-givedlg, .bq-map-form, .gm-app, .gm-dialog, .horlogia-app, .hz-dialog, .pm-manager, .pm-dialog, .sm-dialog, .sm-frame, .sm-journal, .vm-sheet, .vm-dialog, .nm-frame, .cs-app, .cs-dialog, .ms-suite)
+  input[type="checkbox"]:not(.ph-tog input):not(.ms-toggle input):not(.ms-tog input):not(.ms-gg-chip input):not(.rw-g input):not(.rw-c input):not(.bq-sw input):not(.bq-cuc input):not(.fck > input):not(.pm-sw input):not(.ms-sw2 input):hover { border-color: var(--ck-on, #ffc63d); }
+:is(.ms-sheet, .ms-dialog, .ms-gmhub, .ms-menu-app, .bq-app, .bq-dlg, .bq-dialog, .bq-picker, .bq-givedlg, .bq-map-form, .gm-app, .gm-dialog, .horlogia-app, .hz-dialog, .pm-manager, .pm-dialog, .sm-dialog, .sm-frame, .sm-journal, .vm-sheet, .vm-dialog, .nm-frame, .cs-app, .cs-dialog, .ms-suite)
+  input[type="checkbox"]:not(.ph-tog input):not(.ms-toggle input):not(.ms-tog input):not(.ms-gg-chip input):not(.rw-g input):not(.rw-c input):not(.bq-sw input):not(.bq-cuc input):not(.fck > input):not(.pm-sw input):not(.ms-sw2 input):focus-visible { outline: 2px solid #5ee0ff; outline-offset: 2px; }
+:is(.ms-sheet, .ms-dialog, .ms-gmhub, .ms-menu-app, .bq-app, .bq-dlg, .bq-dialog, .bq-picker, .bq-givedlg, .bq-map-form, .gm-app, .gm-dialog, .horlogia-app, .hz-dialog, .pm-manager, .pm-dialog, .sm-dialog, .sm-frame, .sm-journal, .vm-sheet, .vm-dialog, .nm-frame, .cs-app, .cs-dialog, .ms-suite)
+  input[type="checkbox"]:disabled { opacity: .45; cursor: not-allowed; }
+
+/* ═══ interrupteur compact de la suite (au lieu d'une ligne entière pour une seule case) : <label class="ms-sw2"><input type="checkbox"><i></i><span>Texte</span></label> ═══ */
+.ms-sw2 { display: inline-flex !important; flex-direction: row !important; align-items: center; gap: 8px; cursor: pointer; font-size: 13px; line-height: 1.2; width: auto !important; }
+.ms-sw2 > input { position: absolute !important; opacity: 0 !important; width: 0 !important; height: 0 !important; pointer-events: none; }
+.ms-sw2 > i { flex: none; width: 34px; height: 19px; border-radius: 10px; background: #1a2340; border: 1px solid #3a4f8a; position: relative; transition: background .15s, border-color .15s, box-shadow .15s; }
+.ms-sw2 > i::after { content: ""; position: absolute; left: 2px; top: 2px; width: 13px; height: 13px; border-radius: 50%; background: #8ea0c8; transition: transform .15s, background .15s; }
+.ms-sw2 > input:checked + i { background: color-mix(in srgb, var(--ck-on, #ffc63d) 32%, #1a2340); border-color: var(--ck-on, #ffc63d); box-shadow: 0 0 10px -3px var(--ck-on, #ffc63d); }
+.ms-sw2 > input:checked + i::after { transform: translateX(15px); background: var(--ck-on, #ffc63d); }
+.ms-sw2 > input:focus-visible + i { outline: 2px solid #5ee0ff; outline-offset: 2px; }
+
+/* ═══ boutons radio de la suite : un seul rond (même souci que les cases de Foundry v13) ═══ */
+:is(.ms-sheet, .ms-dialog, .ms-gmhub, .ms-menu-app, .bq-app, .bq-dlg, .bq-dialog, .gm-app, .gm-dialog, .horlogia-app, .hz-dialog, .pm-manager, .pm-dialog, .sm-dialog, .vm-sheet, .vm-dialog, .cs-app, .cs-dialog, .ms-suite) input[type="radio"] {
+  appearance: none; -webkit-appearance: none; flex: none; width: 16px; height: 16px; margin: 0; border-radius: 50%; border: 2px solid var(--ck-bd, #6f86c9); background: var(--ck-bg, #0b1230); cursor: pointer; vertical-align: middle; }
+:is(.ms-sheet, .ms-dialog, .ms-gmhub, .ms-menu-app, .bq-app, .bq-dlg, .bq-dialog, .gm-app, .gm-dialog, .horlogia-app, .hz-dialog, .pm-manager, .pm-dialog, .sm-dialog, .vm-sheet, .vm-dialog, .cs-app, .cs-dialog, .ms-suite) input[type="radio"]:checked { border-color: var(--ck-on, #ffc63d); background: radial-gradient(circle, var(--ck-on, #ffc63d) 0 4px, var(--ck-bg, #0b1230) 5px); }
+:is(.ms-sheet, .ms-dialog, .ms-gmhub, .ms-menu-app, .bq-app, .bq-dlg, .bq-dialog, .gm-app, .gm-dialog, .horlogia-app, .hz-dialog, .pm-manager, .pm-dialog, .sm-dialog, .vm-sheet, .vm-dialog, .cs-app, .cs-dialog, .ms-suite) input[type="radio"]::before,
+:is(.ms-sheet, .ms-dialog, .ms-gmhub, .ms-menu-app, .bq-app, .bq-dlg, .bq-dialog, .gm-app, .gm-dialog, .horlogia-app, .hz-dialog, .pm-manager, .pm-dialog, .sm-dialog, .vm-sheet, .vm-dialog, .cs-app, .cs-dialog, .ms-suite) input[type="radio"]::after { content: none !important; display: none !important; }

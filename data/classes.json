@@ -1,0 +1,575 @@
+{
+"roles": {
+"warrior": {
+"name": "Guerrier",
+"icon": "fa-shield-halved",
+"color": "#ff6a5a",
+"desc": "Tient la ligne de front, encaisse et protège."
+},
+"healer": {
+"name": "Soigneur",
+"icon": "fa-hand-holding-heart",
+"color": "#3ddc84",
+"desc": "Soigne, protège et relève les alliés."
+},
+"weapon": {
+"name": "Attaquant armé",
+"icon": "fa-crosshairs",
+"color": "#ffb23d",
+"desc": "Inflige de lourds dégâts avec ses armes."
+},
+"mage": {
+"name": "Mage",
+"icon": "fa-wand-sparkles",
+"color": "#a46bff",
+"desc": "Manie la magie : dégâts, contrôle et soutien."
+}
+},
+"tiers": {
+"1": "Classe de base",
+"2": "Classe évoluée",
+"3": "Classe ultime"
+},
+"list": [
+{
+"id": "gardien",
+"name": "Gardien",
+"role": "warrior",
+"tier": 1,
+"parent": "",
+"icon": "fa-shield",
+"desc": "Le bouclier vivant du groupe : armure lourde, provocation, protection des alliés."
+},
+{
+"id": "rempart",
+"name": "Rempart",
+"role": "warrior",
+"tier": 2,
+"parent": "gardien",
+"icon": "fa-chess-rook",
+"desc": "Une forteresse mobile qui absorbe les coups destinés aux autres."
+},
+{
+"id": "bastion-eternel",
+"name": "Bastion éternel",
+"role": "warrior",
+"tier": 3,
+"parent": "rempart",
+"icon": "fa-dungeon",
+"desc": "Rien ne franchit sa garde ; ses alliés combattent à l'abri de son ombre."
+},
+{
+"id": "chevalier-sentinelle",
+"name": "Chevalier-sentinelle",
+"role": "warrior",
+"tier": 2,
+"parent": "gardien",
+"icon": "fa-shield-halved",
+"desc": "Gardien offensif qui riposte à chaque coup bloqué."
+},
+{
+"id": "paladin-d-airain",
+"name": "Paladin d'airain",
+"role": "warrior",
+"tier": 3,
+"parent": "chevalier-sentinelle",
+"icon": "fa-sun",
+"desc": "Lumière et acier : protège, riposte et redonne courage au groupe."
+},
+{
+"id": "samourai",
+"name": "Samouraï",
+"role": "warrior",
+"tier": 1,
+"parent": "",
+"icon": "fa-khanda",
+"desc": "Lame disciplinée : postures, coups puissants et maîtrise du rythme du combat."
+},
+{
+"id": "lame-de-l-aube",
+"name": "Lame de l'aube",
+"role": "warrior",
+"tier": 2,
+"parent": "samourai",
+"icon": "fa-sun",
+"desc": "Enchaîne les frappes foudroyantes dès l'ouverture du combat."
+},
+{
+"id": "shogun-ecarlate",
+"name": "Shōgun écarlate",
+"role": "warrior",
+"tier": 3,
+"parent": "lame-de-l-aube",
+"icon": "fa-fire",
+"desc": "Commande le champ de bataille d'un seul regard et d'un seul coup."
+},
+{
+"id": "maitre-iaido",
+"name": "Maître iaidō",
+"role": "warrior",
+"tier": 2,
+"parent": "samourai",
+"icon": "fa-wind",
+"desc": "Dégaine et frappe en un éclair ; chaque attaque est un duel."
+},
+{
+"id": "lame-du-neant",
+"name": "Lame du néant",
+"role": "warrior",
+"tier": 3,
+"parent": "maitre-iaido",
+"icon": "fa-moon",
+"desc": "Un coup qui tranche jusqu'à l'espace entre deux instants."
+},
+{
+"id": "moine",
+"name": "Moine",
+"role": "warrior",
+"tier": 1,
+"parent": "",
+"icon": "fa-hand-fist",
+"desc": "Combattant à mains nues : vitesse, combos et esquive."
+},
+{
+"id": "poing-de-fer",
+"name": "Poing de fer",
+"role": "warrior",
+"tier": 2,
+"parent": "moine",
+"icon": "fa-hand-back-fist",
+"desc": "Frappes lourdes qui brisent armures et défenses."
+},
+{
+"id": "titan-interieur",
+"name": "Titan intérieur",
+"role": "warrior",
+"tier": 3,
+"parent": "poing-de-fer",
+"icon": "fa-mountain",
+"desc": "Son corps est une arme absolue, rien ne l'ébranle."
+},
+{
+"id": "danseur-du-vent",
+"name": "Danseur du vent",
+"role": "warrior",
+"tier": 2,
+"parent": "moine",
+"icon": "fa-wind",
+"desc": "Esquive tout et frappe dans les angles morts."
+},
+{
+"id": "ascete-celeste",
+"name": "Ascète céleste",
+"role": "warrior",
+"tier": 3,
+"parent": "danseur-du-vent",
+"icon": "fa-yin-yang",
+"desc": "Ne fait plus qu'un avec le souffle du monde."
+},
+{
+"id": "clerc",
+"name": "Clerc",
+"role": "healer",
+"tier": 1,
+"parent": "",
+"icon": "fa-cross",
+"desc": "Prêtre soigneur : soins puissants, résurrection et bénédictions."
+},
+{
+"id": "grand-pretre",
+"name": "Grand prêtre",
+"role": "healer",
+"tier": 2,
+"parent": "clerc",
+"icon": "fa-church",
+"desc": "Soins de groupe et bénédictions durables."
+},
+{
+"id": "saint-patron",
+"name": "Saint patron",
+"role": "healer",
+"tier": 3,
+"parent": "grand-pretre",
+"icon": "fa-dove",
+"desc": "Ses prières relèvent les morts et renversent les batailles."
+},
+{
+"id": "inquisiteur",
+"name": "Inquisiteur",
+"role": "healer",
+"tier": 2,
+"parent": "clerc",
+"icon": "fa-gavel",
+"desc": "Prêtre combattant qui châtie les impies."
+},
+{
+"id": "main-de-la-sentence",
+"name": "Main de la sentence",
+"role": "healer",
+"tier": 3,
+"parent": "inquisiteur",
+"icon": "fa-scale-balanced",
+"desc": "Jugement divin : soigne les justes, foudroie les autres."
+},
+{
+"id": "druide",
+"name": "Druide",
+"role": "healer",
+"tier": 1,
+"parent": "",
+"icon": "fa-leaf",
+"desc": "Soigneur de la nature : soins sur la durée, plantes et esprits sauvages."
+},
+{
+"id": "gardien-sylvestre",
+"name": "Gardien sylvestre",
+"role": "healer",
+"tier": 2,
+"parent": "druide",
+"icon": "fa-tree",
+"desc": "Les forêts protègent et soignent ses alliés."
+},
+{
+"id": "cur-de-la-foret-mere",
+"name": "Cœur de la forêt-mère",
+"role": "healer",
+"tier": 3,
+"parent": "gardien-sylvestre",
+"icon": "fa-seedling",
+"desc": "La nature entière répond à son appel."
+},
+{
+"id": "chaman-des-betes",
+"name": "Chaman des bêtes",
+"role": "healer",
+"tier": 2,
+"parent": "druide",
+"icon": "fa-paw",
+"desc": "Se lie aux esprits animaux et en prend la force."
+},
+{
+"id": "avatar-sauvage",
+"name": "Avatar sauvage",
+"role": "healer",
+"tier": 3,
+"parent": "chaman-des-betes",
+"icon": "fa-dragon",
+"desc": "Prend la forme des grands esprits de la nature."
+},
+{
+"id": "kannagi",
+"name": "Kannagi",
+"role": "healer",
+"tier": 1,
+"parent": "",
+"icon": "fa-torii-gate",
+"desc": "Prêtresse des sanctuaires : barrières qui préviennent les dégâts et purifications."
+},
+{
+"id": "miko-des-barrieres",
+"name": "Miko des barrières",
+"role": "healer",
+"tier": 2,
+"parent": "kannagi",
+"icon": "fa-shield-heart",
+"desc": "Barrières qui annulent les coups avant qu'ils ne portent."
+},
+{
+"id": "sceau-du-ciel",
+"name": "Sceau du ciel",
+"role": "healer",
+"tier": 3,
+"parent": "miko-des-barrieres",
+"icon": "fa-cloud-sun",
+"desc": "Ses sceaux protègent un royaume entier."
+},
+{
+"id": "exorciste-du-sanctuaire",
+"name": "Exorciste du sanctuaire",
+"role": "healer",
+"tier": 2,
+"parent": "kannagi",
+"icon": "fa-ghost",
+"desc": "Purifie les esprits et chasse le mal."
+},
+{
+"id": "vierge-de-l-aurore",
+"name": "Vierge de l'aurore",
+"role": "healer",
+"tier": 3,
+"parent": "exorciste-du-sanctuaire",
+"icon": "fa-sun",
+"desc": "Lumière sacrée qui dissipe toute malédiction."
+},
+{
+"id": "assassin",
+"name": "Assassin",
+"role": "weapon",
+"tier": 1,
+"parent": "",
+"icon": "fa-user-ninja",
+"desc": "Tueur de l'ombre : dégâts critiques et attaques surprises."
+},
+{
+"id": "lame-silencieuse",
+"name": "Lame silencieuse",
+"role": "weapon",
+"tier": 2,
+"parent": "assassin",
+"icon": "fa-mask",
+"desc": "Frappe sans être vu, élimine en un coup."
+},
+{
+"id": "faucheur-d-ombres",
+"name": "Faucheur d'ombres",
+"role": "weapon",
+"tier": 3,
+"parent": "lame-silencieuse",
+"icon": "fa-skull",
+"desc": "La mort elle-même lui cède le passage."
+},
+{
+"id": "danseur-de-dagues",
+"name": "Danseur de dagues",
+"role": "weapon",
+"tier": 2,
+"parent": "assassin",
+"icon": "fa-wind",
+"desc": "Enchaîne les coups rapides et les lancers."
+},
+{
+"id": "tempete-de-lames",
+"name": "Tempête de lames",
+"role": "weapon",
+"tier": 3,
+"parent": "danseur-de-dagues",
+"icon": "fa-tornado",
+"desc": "Un ouragan d'acier que nul ne suit des yeux."
+},
+{
+"id": "bretteur",
+"name": "Bretteur",
+"role": "weapon",
+"tier": 1,
+"parent": "",
+"icon": "fa-hand-sparkles",
+"desc": "Escrimeur agile : coups multiples, panache et adaptation."
+},
+{
+"id": "duelliste-flamboyant",
+"name": "Duelliste flamboyant",
+"role": "weapon",
+"tier": 2,
+"parent": "bretteur",
+"icon": "fa-fire",
+"desc": "Brille dans les duels, chaque esquive prépare une riposte."
+},
+{
+"id": "rapiere-souveraine",
+"name": "Rapière souveraine",
+"role": "weapon",
+"tier": 3,
+"parent": "duelliste-flamboyant",
+"icon": "fa-crown",
+"desc": "Maître incontesté du duel, sa lame dicte le combat."
+},
+{
+"id": "corsaire",
+"name": "Corsaire",
+"role": "weapon",
+"tier": 2,
+"parent": "bretteur",
+"icon": "fa-anchor",
+"desc": "Combattant opportuniste, deux armes et mille ruses."
+},
+{
+"id": "roi-des-sept-mers",
+"name": "Roi des sept mers",
+"role": "weapon",
+"tier": 3,
+"parent": "corsaire",
+"icon": "fa-ship",
+"desc": "Légende vivante des mers et des abordages."
+},
+{
+"id": "barde",
+"name": "Barde",
+"role": "weapon",
+"tier": 1,
+"parent": "",
+"icon": "fa-guitar",
+"desc": "Musicien de combat : chants de soutien et attaques rythmées."
+},
+{
+"id": "chantre-de-guerre",
+"name": "Chantre de guerre",
+"role": "weapon",
+"tier": 2,
+"parent": "barde",
+"icon": "fa-drum",
+"desc": "Ses chants décuplent la force du groupe."
+},
+{
+"id": "hymne-vivant",
+"name": "Hymne vivant",
+"role": "weapon",
+"tier": 3,
+"parent": "chantre-de-guerre",
+"icon": "fa-music",
+"desc": "Sa voix seule change le cours d'une bataille."
+},
+{
+"id": "menestrel-des-ombres",
+"name": "Ménestrel des ombres",
+"role": "weapon",
+"tier": 2,
+"parent": "barde",
+"icon": "fa-masks-theater",
+"desc": "Mélodies qui troublent et affaiblissent l'ennemi."
+},
+{
+"id": "requiem-eternel",
+"name": "Requiem éternel",
+"role": "weapon",
+"tier": 3,
+"parent": "menestrel-des-ombres",
+"icon": "fa-moon",
+"desc": "Une mélodie que nul n'entend sans y laisser un peu de lui."
+},
+{
+"id": "sorcier",
+"name": "Sorcier",
+"role": "mage",
+"tier": 1,
+"parent": "",
+"icon": "fa-fire-flame-curved",
+"desc": "Mage d'attaque : sorts élémentaires dévastateurs."
+},
+{
+"id": "archimage-elementaire",
+"name": "Archimage élémentaire",
+"role": "mage",
+"tier": 2,
+"parent": "sorcier",
+"icon": "fa-bolt",
+"desc": "Maîtrise les quatre éléments et leurs combinaisons."
+},
+{
+"id": "seigneur-des-elements",
+"name": "Seigneur des éléments",
+"role": "mage",
+"tier": 3,
+"parent": "archimage-elementaire",
+"icon": "fa-meteor",
+"desc": "Le feu, la glace, la foudre et la terre lui obéissent."
+},
+{
+"id": "sorcier-du-neant",
+"name": "Sorcier du néant",
+"role": "mage",
+"tier": 2,
+"parent": "sorcier",
+"icon": "fa-circle-half-stroke",
+"desc": "Magie interdite qui ronge la matière."
+},
+{
+"id": "avatar-de-l-abime",
+"name": "Avatar de l'abîme",
+"role": "mage",
+"tier": 3,
+"parent": "sorcier-du-neant",
+"icon": "fa-skull",
+"desc": "Porte en lui un fragment du vide primordial."
+},
+{
+"id": "invocateur",
+"name": "Invocateur",
+"role": "mage",
+"tier": 1,
+"parent": "",
+"icon": "fa-dragon",
+"desc": "Mage des pactes : appelle et commande des créatures."
+},
+{
+"id": "maitre-des-pactes",
+"name": "Maître des pactes",
+"role": "mage",
+"tier": 2,
+"parent": "invocateur",
+"icon": "fa-file-signature",
+"desc": "Multiplie les pactes et les invocations."
+},
+{
+"id": "souverain-des-legions",
+"name": "Souverain des légions",
+"role": "mage",
+"tier": 3,
+"parent": "maitre-des-pactes",
+"icon": "fa-chess-king",
+"desc": "Une armée entière répond à son appel."
+},
+{
+"id": "dompteur-d-esprits",
+"name": "Dompteur d'esprits",
+"role": "mage",
+"tier": 2,
+"parent": "invocateur",
+"icon": "fa-ghost",
+"desc": "Fusionne avec ses invocations et partage leur force."
+},
+{
+"id": "lie-au-dragon-ancien",
+"name": "Lié au dragon ancien",
+"role": "mage",
+"tier": 3,
+"parent": "dompteur-d-esprits",
+"icon": "fa-dragon",
+"desc": "Un dragon ancestral a accepté de devenir son compagnon."
+},
+{
+"id": "enchanteur",
+"name": "Enchanteur",
+"role": "mage",
+"tier": 1,
+"parent": "",
+"icon": "fa-wand-magic-sparkles",
+"desc": "Mage de soutien : renforts, contrôle et gestion des ressources du groupe."
+},
+{
+"id": "maitre-du-temps",
+"name": "Maître du temps",
+"role": "mage",
+"tier": 2,
+"parent": "enchanteur",
+"icon": "fa-hourglass-half",
+"desc": "Accélère les alliés, ralentit les ennemis."
+},
+{
+"id": "gardien-de-l-horloge",
+"name": "Gardien de l'horloge",
+"role": "mage",
+"tier": 3,
+"parent": "maitre-du-temps",
+"icon": "fa-clock",
+"desc": "Le temps lui-même se plie à sa volonté."
+},
+{
+"id": "tisseur-d-illusions",
+"name": "Tisseur d'illusions",
+"role": "mage",
+"tier": 2,
+"parent": "enchanteur",
+"icon": "fa-eye",
+"desc": "Égare l'ennemi dans des illusions."
+},
+{
+"id": "architecte-des-reves",
+"name": "Architecte des rêves",
+"role": "mage",
+"tier": 3,
+"parent": "tisseur-d-illusions",
+"icon": "fa-cloud-moon",
+"desc": "Crée des réalités dans lesquelles l'ennemi se perd."
+}
+]
+}

@@ -1,20 +1,60 @@
 {
   "id": "manhwa-sheet",
-  "title": "Manhwa Sheet",
-  "description": "A standalone, fully configurable character sheet system for manhwa-style play: hunters, regressors, murim, system apocalypses. Configurable stats, currencies, ranks, awakening states, origins, identity sections and item categories, with a neon system-window art direction.",
-  "version": "0.1.0",
-  "authors": [{ "name": "Bastien" }],
-  "compatibility": { "minimum": "13", "verified": "13" },
-  "esmodules": ["scripts/manhwa.js"],
-  "styles": ["styles/manhwa-sheet.css"],
-  "languages": [{ "lang": "en", "name": "English", "path": "lang/en.json" }],
-  "documentTypes": {
-    "Actor": { "character": {}, "npc": {} },
-    "Item": { "item": {} }
+  "title": "Fiche - Manhwa",
+  "description": "Fiche de personnage autonome et entièrement configurable pour le jeu façon manhwa : chasseurs, régresseurs, murim, apocalypses système. Stats, monnaies, rangs, états d'éveil, origines, sections d'identité et catégories d'objets configurables, direction artistique « fenêtre système » néon et verre.",
+  "version": "1.66.5",
+  "authors": [
+    {
+      "name": "Bastien"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
   },
-  "grid": { "distance": 5, "units": "ft" },
+  "esmodules": [
+    "scripts/manhwa.js"
+  ],
+  "styles": [
+    "styles/manhwa-sheet.css",
+    "styles/menu.css",
+    "styles/phone.css",
+    "styles/fullscreen.css",
+    "styles/suite.css",
+    "styles/central.css",
+    "styles/wiki.css",
+    "styles/progression.css",
+    "styles/book.css"
+  ],
+  "languages": [
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": {},
+      "npc": {},
+      "creature": {}
+    },
+    "Item": {
+      "item": {}
+    }
+  },
+  "grid": {
+    "distance": 5,
+    "units": "ft"
+  },
   "primaryTokenAttribute": "resources.coins",
   "url": "https://github.com/blendbastien/manhwa-sheet",
   "manifest": "https://github.com/blendbastien/manhwa-sheet/releases/latest/download/system.json",
-  "download": "https://github.com/blendbastien/manhwa-sheet/releases/latest/download/manhwa-sheet.zip"
+  "download": "https://github.com/blendbastien/manhwa-sheet/releases/latest/download/manhwa-sheet.zip",
+  "socket": true
 }

@@ -1,0 +1,28 @@
+{
+  "TYPES": {
+    "Actor": {
+      "character": "Personnage",
+      "npc": "Character",
+      "creature": "Créature"
+    },
+    "Item": {
+      "item": "Objet"
+    }
+  },
+  "MANHWA": {
+    "Settings": {
+      "Config": "Configuration de la fiche",
+      "ConfigLabel": "Configurer",
+      "ConfigHint": "Statistiques, monnaies, rangs, états d'éveil, origines, sections d'identité et catégories d'objets.",
+      "Progression": "Progression & coûts",
+      "ProgressionLabel": "Configurer",
+      "ProgressionHint": "Stats payantes (désactivé par défaut), modèle de coût, plafonds et paliers.",
+      "Theme": "Thème",
+      "ThemeHint": "Direction artistique de toutes les fiches, imposée par le MJ à toute la table.",
+      "Anim": "Animations (ce client)",
+      "AnimHint": "Baisse ce réglage si les fiches rament.",
+      "PlayersCanLower": "Les joueurs peuvent baisser une stat",
+      "GmFree": "Le MJ ne paie jamais les stats"
+    }
+  }
+}
