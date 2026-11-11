@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+<defs>
+<radialGradient id="b" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ff8a9b"/><stop offset=".45" stop-color="#e0143a"/><stop offset="1" stop-color="#4a0010"/></radialGradient>
+<linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<filter id="g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3.2" result="a"/><feMerge><feMergeNode in="a"/><feMergeNode in="a"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="o" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.5"/></filter>
+</defs>
+<circle cx="50" cy="50" r="45" fill="none" stroke="#ff3a5e" stroke-width="4" filter="url(#o)" opacity=".9"/>
+<circle cx="50" cy="50" r="43" fill="#0b0f1e"/>
+<circle cx="50" cy="50" r="40" fill="url(#b)"/>
+<circle cx="50" cy="50" r="40" fill="none" stroke="#ffd0d8" stroke-width="2.4" filter="url(#g)"/>
+<ellipse cx="50" cy="30" rx="27" ry="13" fill="url(#s)"/>
+<g filter="url(#g)"><path d="M36 36 L64 64 M64 36 L36 64" fill="none" stroke-linecap="round" stroke="#ff3a5e" stroke-width="13" opacity=".55"/><path d="M36 36 L64 64 M64 36 L36 64" fill="none" stroke-linecap="round" stroke="#ffffff" stroke-width="8"/></g>
+</svg>
